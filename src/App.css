@@ -1,0 +1,71 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1500px;
+  min-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-and-instructions{
+  /* display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 10vh;
+  width:100%;
+  height:50%; */
+  .title{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .title h2{
+    margin-bottom: 0;
+    margin-top:10px;
+  } 
+  .title h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+/* without this an error is shown triggered by some chrome extensions */
+iframe#webpack-dev-server-client-overlay{display:none !important}
+
+.big-map{
+  width: 60%; 
+  height: 60%;
+  position:static;
+  margin: auto;
+  object-fit: cover;
+}
+
+.action-menu-instructions{
+  position:absolute;
+  top: 0;
+  right:20px;
+  width:max-content;
+}
+@media only screen and (max-width: 500px) {
+  .App{
+    min-width: 100px;
+    padding: 10px;
+  }
+  .big-map{
+    margin:0;
+  }
+  .title{
+    font-size: 10px;
+
+  }
+}

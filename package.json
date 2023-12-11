@@ -1,0 +1,78 @@
+{
+  "name": "my-map-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://findbulgaria.github.io",
+  "dependencies": {
+    "@cypress/react": "^8.0.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "@maplibre/maplibre-gl-geocoder": "^1.5.0",
+    "@maptiler/geocoding-control": "^1.0.0",
+    "@maptiler/sdk": "^1.2.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/base": "^5.0.0-beta.18",
+    "@mui/icons-material": "^5.14.11",
+    "@mui/material": "^5.14.11",
+    "@react-navigation/core": "^6.4.9",
+    "@stadiamaps/maplibre-search-box": "^1.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/testing-library__react": "^10.2.0",
+    "geolib": "^3.3.4",
+    "mapbox-gl": "^2.15.0",
+    "mapbox-gl-geocoder": "^2.0.1",
+    "maplibre-gl": "^3.3.1",
+    "material-ui-popup-state": "^5.0.9",
+    "react": "^17.0.0",
+    "react-awesome-slider": "^4.1.0",
+    "react-dom": "^17.0.0",
+    "react-icons": "^4.11.0",
+    "react-image-gallery": "^1.3.0",
+    "react-loader-spinner": "^5.4.5",
+    "react-map-gl": "^5.3.10",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^9.1.3",
+    "react-tooltip": "^5.21.5",
+    "slick-carousel": "^1.8.1",
+    "state-pool": "^0.10.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --watchAll --coverage",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "defaults",
+      "not ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^12.1.2",
+    "gh-pages": "^6.1.0",
+    "jest-puppeteer": "^9.0.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
+  }
+}

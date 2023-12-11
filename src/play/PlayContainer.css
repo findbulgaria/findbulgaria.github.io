@@ -1,0 +1,45 @@
+.play-container .image-gallery {
+    width: 100%;
+    height: 50vh;
+    font-size: smaller;
+    overflow: hidden;
+}
+
+.play-container .image-gallery-slide{
+   width: 100%;
+    height:50vh;
+    overflow: hidden;
+}
+.play-container .image-gallery-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.progress{
+    margin-top:20px;
+}
+
+.play-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.content{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 500px){
+    .play-container .content{
+        min-width: 100px;
+    }
+    .play-container .image-gallery-slide-wrapper{
+        width: 100%;
+    }
+    .play-container .image-gallery-slide img{
+        object-fit: contain;
+    }
+}

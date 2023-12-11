@@ -1,0 +1,21 @@
+.end-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+.end-game-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 550px;
+
+}
+p{
+    font-size:20px;
+    overflow: hidden;
+}

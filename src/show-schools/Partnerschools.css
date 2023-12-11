@@ -1,0 +1,13 @@
+.partnerschools-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partnerschools-container .note{
+    font-size: small;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
