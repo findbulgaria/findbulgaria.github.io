@@ -13,9 +13,9 @@ function MapComponent({data, setSchoolName,
       guessTaken, round, markerToDisplay, playedRounds, mode}){
         const mapContainer = useRef(null);
         const map = useRef(null);
-        const [lng] = useState(10);
-        const [lat] = useState(20);
-        const [zoom] = useState(1);
+        const [lng] = useState(25.319941);
+        const [lat] = useState(42.698334);
+        const [zoom] = useState(6);
         // const [API_KEY] = useState('kjQvurI9caYwwtweojCm');
         const currentMarker = useRef(null);
         const answerMarker = useRef(null);
