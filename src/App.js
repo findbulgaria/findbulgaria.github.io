@@ -60,13 +60,13 @@ function App() {
               ariaLabel="color-ring-loading"
               wrapperStyle={{}}
               wrapperClass=""
-              colors={['red','#E95A0C', '#B52483', '#000000', '#F2F2F2']}
+              colors={['red', 'green','red', 'green']}
             />
           </div>  
           ):(
             <div>
               <div className='logo'>
-                <img src="logo.jpg" alt="logo" style={{
+                <img src="logo.png" alt="logo" style={{
                   width: "80px",
                   position: "absolute",
                   top: "10px",
@@ -100,8 +100,6 @@ function App() {
               </div>
                 
               </div>
-  
-              <HashRouter>
                 <Routes>
                   <Route path="/" element={<Main />} />
                   <Route path="/instructions" element={<Instructions />} />
@@ -111,7 +109,6 @@ function App() {
                   <Route path="/end-game" element={<EndGame />} />
                   <Route path="/error404" element={<Error404 />} />
                 </Routes>
-              </HashRouter>
             </div>
           )
         }

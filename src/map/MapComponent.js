@@ -260,15 +260,15 @@ function MapComponent({data, setSchoolName,
             await map.current.once('load');
         }
         const calculate_points = (distance) =>{
-            if (distance < 100.0) {
+            if (distance < 10.0) {
                 return 5;
-            } if (distance < 300.0) {
+            } if (distance < 20.0) {
                 return 4;
-            }  if (distance < 500.0) {
+            }  if (distance < 40.0) {
                 return 3;
-            }  if (distance < 800.0) {
+            }  if (distance < 60.0) {
                 return 2;
-            }  if( distance < 1000.0){
+            }  if( distance < 100.0){
                 return 1;
             }
             return 0;
