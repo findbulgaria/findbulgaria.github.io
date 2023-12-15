@@ -22,16 +22,13 @@ function Main() {
           <MapComponent />
         </div>
         <div className ="buttons">
-          <Button 
-            variant ="contained"
-            style={{
-              margin: "10px",
-            }}
-            onClick={()=>{
-              navigate('/play', { state: { key: Math.random() } })
-            }}
-          >
-            {texts.start_play}
+          <Button
+          variant ="contained"
+          style={{
+            margin: "10px",
+          }}
+           onClick = { () =>{navigate('/play')}}>
+          Играй
           </Button>
           <Button 
             variant ="contained"

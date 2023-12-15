@@ -36,8 +36,9 @@ function Play(){
 
       return random_photos;
     }
+    
     return <div>
-        <PlayContainer randomPhotos = {get_random_photos(data, number_of_rounds)}>
+        <PlayContainer randomPhotos = {get_random_photos(data, number_of_rounds)} >
         </PlayContainer>
       </div>
 }

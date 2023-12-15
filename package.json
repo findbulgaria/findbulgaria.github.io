@@ -2,7 +2,7 @@
   "name": "my-map-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://findbulgaria.github.io",
+  "homepage": "https://findbulgaria.github.io/",
   "dependencies": {
     "@cypress/react": "^8.0.0",
     "@emotion/react": "^11.11.1",
