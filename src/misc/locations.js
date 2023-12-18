@@ -35,6 +35,7 @@ export const data = [
     city:"Sofia",
     lat:42.696188283332496,
     long:23.332822120189867,
+    landmark:"Катедрала Александър Невски",
     images: [
       {
         original:'/images/al_nevski.jpg',
@@ -51,6 +52,7 @@ export const data = [
     city:"Asenovgrad",
     lat:41.98673179148672, 
     long:24.87295556605434,
+    landmark:"Aсенова крепост",
     images: [
       {
         original:'/images/asenova_krepost.jpg',
@@ -67,6 +69,7 @@ export const data = [
     city:"Belogradchik",
     lat:43.667925930838045,
     long: 22.67382864412286,
+    landmark:"Белоградчишките скали",
     images: [
       {
         original:'/images/belograd_skali.jpg',
@@ -83,6 +86,7 @@ export const data = [
     city:"Rila",
     lat:42.13401052880345, 
     long:23.339971958854,
+    landmark:"Манастир Иван Рилски",
     images: [
       {
         original:'/images/ivan_rilski.jpg',
@@ -99,6 +103,7 @@ export const data = [
     city:"Kavarna",
     lat:43.361841175231596, 
     long:28.465347964031935,
+    landmark:"Нос Калиакра",
     images: [
       {
         original:'/images/kaliakra.jpg',
@@ -115,6 +120,7 @@ export const data = [
     city:"Koprivstitsa",
     lat:42.63586578725029, 
     long:24.35796148742122,
+    landmark:"Копривщица",
     images: [
       {
         original:'/images/koprivstica.jpg',
@@ -131,6 +137,7 @@ export const data = [
     city:"Madara",
     lat:43.28157810298393, 
     long:27.120892436162634,
+    landmark:"Maдарският конник",
     images: [
       {
         original:'/images/madarski_konnik.jpg',
@@ -147,6 +154,7 @@ export const data = [
     city:"Karlukovo",
     lat:43.1759252582199, 
     long:24.07418194141944,
+    landmark:"Пещера Проходна",
     images: [
       {
         original:'/images/pestera_prohodna.jpg',
@@ -163,6 +171,7 @@ export const data = [
     city:"Rila",
     lat:42.21184271670571,
     long:23.32069075581243,
+    landmark:"Седемте рилски езера",
     images: [
       {
         original:'/images/sedem_rilski_ezera.jpg',
@@ -179,6 +188,7 @@ export const data = [
     city:"Shipka",
     lat:42.75253861962042,
     long: 25.336180633123057,
+    landmark:"Шипка",
     images: [
       {
         original:'/images/shipka.jpg',
@@ -195,6 +205,7 @@ export const data = [
     city:"Razgrad",
     lat:43.745309631431354,
     long: 26.76643657148429,
+    landmark:"Свещарска гробница",
     images: [
       {
         original:'/images/svestarska_grobnica.jpg',
@@ -211,6 +222,7 @@ export const data = [
     city:"Велико Търново",
     lat:43.084339280960705, 
     long:25.652239642563345,
+    landmark:"Крепостта Царевец",
     images: [
       {
         original:'/images/zarevez.jpg',

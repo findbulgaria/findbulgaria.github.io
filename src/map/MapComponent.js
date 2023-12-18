@@ -308,8 +308,6 @@ function MapComponent({data, setSchoolName,
                 }).setHTML(school.landmark);
 
                 const marker = new maplibregl.Marker();
-                // or maybe it is because some chrome extension -> inkognito mode works fine
-                //https://stackoverflow.com/questions/72494154/a-listener-indicated-an-asynchronous-response-by-returning-true-but-the-messag
                 marker.setLngLat([school.long,school.lat]).setPopup(popup)
                 .addTo(map.current);
                 marker.getElement().addEventListener('click', ()=>{

@@ -50,15 +50,18 @@
     overflow-y: visible;
     flex: 1 0 auto;
 }
-
+/* .map-and-photo .courses-of-study p{
+    overflow:auto;
+} */
 .small-map{
     width: 100%;
     height: 100%;
 }
-.map-and-photo td {
+/* .map-and-photo td {
     padding: 2px;
-}
-
+    overflow: auto;
+    height:10vh;
+} */
 @media only screen and (max-width: 500px){
     .map-and-photo .image-gallery-slide-wrapper {
         width: 100%;

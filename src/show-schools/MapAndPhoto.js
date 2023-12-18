@@ -54,22 +54,23 @@ function MapAndPhoto({propSchoolName}){
                     <Container style = {{
                         display:"flex",
                         flexDirection:"row",
-                        justifyContent:"center",
-                        alignItems:"center",
                         width:"100%",
-                        flexWrap:"wrap",}}>
+                        flexWrap:"wrap",
+                        overflowY:"auto"}}>
                         <Info sx={{
                             display:"flex",
+                            overflowY:"auto"
                             }}>
-                            <table>
+                                <Table>
                                 <tbody>
-                                    <tr>
-                                        <td>
+                                    <td>
                                             <h4>{selectedSchool.landmark}
 
                                             </h4>
                                             <p className="place"><MdPlace />{selectedSchool.city}</p>
                                         </td>
+                                    <tr>
+                                        
                                         <td>
                                             <div className ="courses-of-study">
                                                 <p>{selectedSchool.info}</p>
@@ -77,7 +78,7 @@ function MapAndPhoto({propSchoolName}){
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </Table>
                         </Info>
                     </Container>
                 </Item>
