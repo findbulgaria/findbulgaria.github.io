@@ -112,6 +112,7 @@ function MapComponent({data, setSchoolName,
                 });
                 await map.current.once('idle');
                 map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
+                map.current.addControl(new maplibregl.FullscreenControl());
             }
         }
         useEffect(() => {
