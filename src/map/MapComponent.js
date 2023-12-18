@@ -308,15 +308,31 @@ function MapComponent({data, setSchoolName,
                 }).setHTML(school.landmark);
 
                 const marker = new maplibregl.Marker();
+               
                 marker.setLngLat([school.long,school.lat]).setPopup(popup)
                 .addTo(map.current);
                 marker.getElement().addEventListener('click', ()=>{
-                    
+                    let element = marker.getElement();
+                    let svg = element.getElementsByTagName("svg")[0];
+                    let path = svg.getElementsByTagName("path")[0];
+                    path.setAttribute("fill", "#dc2626");
                     const schoolName = getSchoolNameFromGeoCoordinates(marker.getLngLat().lng, marker.getLngLat().lat);
                     console.log(marker.getLngLat().lng, marker.getLngLat().lat);
                     setSchoolName(schoolName);
+                    path.setAttribute("fill", "#dc2626");
                     if(!alreadyInMapAndPhoto){
+                        let element = marker.getElement();
+                        let svg = element.getElementsByTagName("svg")[0];
+                        let path = svg.getElementsByTagName("path")[0];
+                        path.setAttribute("fill", "#dc2626");
                         setGoToMapAndPhoto(true);
+                        
+                    }
+                    if(alreadyInMapAndPhoto){
+                        let element = marker.getElement();
+                        let svg = element.getElementsByTagName("svg")[0];
+                        let path = svg.getElementsByTagName("path")[0];
+                        path.setAttribute("fill", "#dc2626");
                     }
                 }, false);
             });
