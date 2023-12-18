@@ -19,9 +19,9 @@ function Play(){
       while (random_photos.length < number) {
           const random_index = Math.floor(Math.random() * data.length);
 
-          if (usedIndexes.has(random_index)) {
-          continue;
-          }
+          // if (usedIndexes.has(random_index)) {
+          // continue;
+          // }
 
           usedIndexes.add(random_index);
 
@@ -30,8 +30,9 @@ function Play(){
           }
 
           const random_images = data[random_index].images;
-          const random_image_index = Math.floor(Math.random() * random_images.length);
-          random_photos.push(random_images[random_image_index]);
+          //const random_image_index = Math.floor(Math.random() * random_images.length);
+          random_photos.push(random_images[0]);
+          console.log("random_images[0]:", random_images[0]);
       }
 
       return random_photos;

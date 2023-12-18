@@ -36,7 +36,7 @@ function MapAndPhoto({propSchoolName}){
         boxShadow:'none'
       }));
         const [schoolName, setSchoolName] = useState(propSchoolName);
-        const selectedSchool = data.find((school) => school.school === schoolName);
+        const selectedSchool = data.find((school) => school.landmark === schoolName);
         const navigate = useNavigate();
 
     return (
@@ -65,17 +65,14 @@ function MapAndPhoto({propSchoolName}){
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <h4>{selectedSchool.school}
-                                                <a href={selectedSchool.website !== "" ? selectedSchool.website : "/error404" } target="_blank" rel="noreferrer">
-                                                    <MdOpenInNew />
-                                                </a>
+                                            <h4>{selectedSchool.landmark}
+
                                             </h4>
-                                            <p className="place"><MdPlace />{selectedSchool.place}, {selectedSchool.land}</p>
+                                            <p className="place"><MdPlace />{selectedSchool.city}</p>
                                         </td>
                                         <td>
                                             <div className ="courses-of-study">
-                                                <h4>{texts.for_these_courses_of_study}</h4>
-                                                <p>{selectedSchool.course_of_study}</p>
+                                                <p>{selectedSchool.info}</p>
                                             </div>
                                         </td>
                                     </tr>

@@ -191,7 +191,7 @@ function MapComponent({data, setSchoolName,
             isGuessTaken.current = false;
             map.current.flyTo({
                 center: markerToDisplay[round][1].getLngLat().toArray(),
-                zoom: 3,
+                zoom: 15,
                 speed: 1.5,
                 curve: 1,
                 easing(t) {
@@ -215,7 +215,7 @@ function MapComponent({data, setSchoolName,
                 markerToDisplay[round][1].addTo(map.current);
                 map.current.flyTo({
                     center: markerToDisplay[round][1].getLngLat().toArray(),
-                    zoom: 3,
+                    zoom: 15,
                     speed: 1.5,
                     curve: 1,
                     easing(t) {
@@ -305,7 +305,7 @@ function MapComponent({data, setSchoolName,
                     anchor: 'bottom-left',
                     offset: [0, -10],
                     className: 'hover-popup'
-                }).setHTML(school.school);
+                }).setHTML(school.landmark);
 
                 const marker = new maplibregl.Marker();
                 // or maybe it is because some chrome extension -> inkognito mode works fine
@@ -315,6 +315,7 @@ function MapComponent({data, setSchoolName,
                 marker.getElement().addEventListener('click', ()=>{
                     
                     const schoolName = getSchoolNameFromGeoCoordinates(marker.getLngLat().lng, marker.getLngLat().lat);
+                    console.log(marker.getLngLat().lng, marker.getLngLat().lat);
                     setSchoolName(schoolName);
                     if(!alreadyInMapAndPhoto){
                         setGoToMapAndPhoto(true);
@@ -327,7 +328,7 @@ function MapComponent({data, setSchoolName,
             let name = "";
             data.forEach((school) => {
                 if (school.long === lng && school.lat === lat) {
-                    name = school.school;
+                    name = school.landmark;
                 }
             });
             return name;
